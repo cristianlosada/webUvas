@@ -1,0 +1,298 @@
+.logo {
+    height: 60px;
+    width: 130px;
+    margin-bottom: -15px;
+}
+
+.logo2 {
+    height: 40px;
+    width: 100px;
+}
+
+.footer-bs {
+    background-color: #3c3d41;
+    padding: 60px 40px;
+    color: rgba(255, 255, 255, 1.00);
+    margin-bottom: 20px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 6px;
+}
+
+.footer-bs .footer-brand,
+.footer-bs .footer-nav,
+.footer-bs .footer-social,
+.footer-bs .footer-ns {
+    padding: 10px 25px;
+}
+
+.footer-bs .footer-nav,
+.footer-bs .footer-social,
+.footer-bs .footer-ns {
+    border-color: transparent;
+}
+
+.footer-bs .footer-brand h2 {
+    margin: 0px 0px 10px;
+}
+
+.footer-bs .footer-brand p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.70);
+}
+
+.footer-bs .footer-nav ul.pages {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-bs .footer-nav ul.pages li {
+    padding: 5px 0px;
+}
+
+.footer-bs .footer-nav ul.pages a {
+    color: rgba(255, 255, 255, 1.00);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-bs .footer-nav ul.pages a:hover {
+    color: rgba(255, 255, 255, 0.80);
+    text-decoration: none;
+}
+
+.footer-bs .footer-nav h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.footer-bs .footer-nav ul.list {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-bs .footer-nav ul.list li {
+    padding: 5px 0px;
+}
+
+.footer-bs .footer-nav ul.list a {
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.footer-bs .footer-nav ul.list a:hover {
+    color: rgba(255, 255, 255, 0.60);
+    text-decoration: none;
+}
+
+.footer-bs .footer-social ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-bs .footer-social h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.footer-bs .footer-social li {
+    padding: 5px 4px;
+}
+
+.footer-bs .footer-social a {
+    color: rgba(255, 255, 255, 1.00);
+}
+
+.footer-bs .footer-social a:hover {
+    color: rgba(255, 255, 255, 0.80);
+    text-decoration: none;
+}
+
+.footer-bs .footer-ns h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.footer-bs .footer-ns p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.70);
+}
+
+@media (min-width: 768px) {
+    .footer-bs .footer-nav,
+    .footer-bs .footer-social,
+    .footer-bs .footer-ns {
+        border-left: solid 1px rgba(255, 255, 255, 0.10);
+    }
+}
+
+.imagenSoporte {
+    height: 300px;
+}
+
+.iconos {
+    height: 20px;
+    width: 20px;
+}
+
+.contenedor {
+    width: 12%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay.action {
+    visibility: visible;
+}
+
+.overlai {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    background: #ececec;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, rgba(0, 0, 0, 0.3));
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    transition: .3s ease all;
+    opacity: 0;
+}
+
+.popup .cerrar-popup {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #aaa7a7;
+    transition: .1s ease all;
+    width: -70%;
+}
+
+.popup .cerrar-popup:hover {
+    color: #000000;
+}
+
+.popup h3 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.popup h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.popup form .btn-submit {
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #ffffff;
+    background: #43e92d;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.popup form .btn-submit:hover {
+    background: rgba(44, 218, 28, 0.9)
+}
+
+.contenedor .btnAbrir-popup {
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border-color: #36dd20;
+    color: #2dd117;
+    background: #ffffff;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.contenedor .btnAbrir-popup:hover {
+    background: #f3f3f3;
+}
+
+.popup.action {
+    opacity: 1;
+}
+
+.form-register {
+    background: #ececec;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+}
+
+.form-register .cerrar-popup {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #aaa7a7;
+    width: -70%;
+}
+
+.form-register .cerrar-popup:hover {
+    color: #000000;
+}
+
+.form-register h3 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.form-register h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.form-register form .contenedor-inputs label {
+    width: 100%;
+    margin-bottom: 1px;
+    height: 10px;
+    line-height: 52px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.inputIndex {
+    height: 45px;
+}

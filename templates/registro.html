@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/icon.jpg')}}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Stilos.css')}}" />
+
+    <!-- google   fonts - stilos de letras -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/eb6b06f2da.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-white mb-5">
+        <a class="navbar-brand ml-2 " href="/"><img src="{{ url_for('static', filename='img/logo.jpg')}}" class="logo d-none d-md-block "></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-3">
+                <li class="nav-item active ml-3">
+                    <a class="nav-link" href="/">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item  ml-3">
+                    <a class="nav-link " href="#">Productos</a>
+                </li>
+                <li class="nav-item  ml-3">
+                    <a class="nav-link" href="#">Quienes somos</a>
+                </li>
+                <li class="nav-item  ml-3">
+                    <a class="nav-link" href="#">Contáctenos</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!--form de registro-->
+
+
+    <article>
+        <div class="overlai" id="overlai">
+            <div class="form-register" id="popup">
+                <!--<a href="#" class="cerrar-popup" id="cerrar-popup"><i class="fas fa-times"></i></a>-->
+                <h3>Registrate</h3>
+                <form action="/formregister" method="POST">
+                    <div class="contenedor-inputs">
+                        <label for="nombreR">Nombre</label>
+                        <input type="text" placeholder="Nombre" name="nombreR" class="form-control" required>
+                        <label for="apellidoR">Apellido</label>
+                        <input type="text" placeholder="Apellido" name="apellidoR" class="form-control" required>
+                        <label for="emailR">Email</label>
+                        <input type="email" placeholder="Email" name="emailR" class="form-control" required>
+                        <label for="telefonoR">Telefono</label>
+                        <input type="number" placeholder="Telefono" name="telefonoR" class="form-control" required>
+                        <label for="ciudadR">Ciudad</label>
+                        <input type="number" placeholder="Ciudad" name="ciudadR" class="form-control" required>
+                        <label for="departamentoR">Departamento</label>
+                        <input type="number" placeholder="Departamento" name="departamentoR" class="form-control" required>
+                        <label for="passR">Contraseña</label>
+                        <input type="password" placeholder="Contraseña" name="passR" class="form-control" required>
+                        <label for="passconfR">Confirmar Contraseña</label>
+                        <input type="password" placeholder="Confirmar Contraseña" name="passconfR" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-success mt-2">Aceptar</button>
+                    <h4> Ya tienes cuenta? <a href="/"> Iniciar Sesion </a></h4>
+
+
+                </form>
+            </div>
+        </div>
+
+    </article>
+
+
+    <section style="text-align:center; margin:10px auto;">
+        <p>Designed with <i class="fas fa-heart"></i> by <a href="www.uvastello.com">crissoft and razor</a></p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js " integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin=" anonymous "></script>
+    <script>
+        $("#prueba ").hide(3000);
+    </script>
+
+</body>
+
+</html>
